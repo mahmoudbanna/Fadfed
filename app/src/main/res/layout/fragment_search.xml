@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/toplay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical|center_horizontal"
+        android:paddingBottom="@dimen/cat_title_pad_top_buttom"
+        android:paddingTop="@dimen/cat_title_pad_top_buttom" >
+
+        <EditText
+            android:id="@+id/searchet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/searchbut"
+            android:background="@color/feed_item_name"
+            android:drawableRight="@drawable/search_unpushed"
+            android:ems="10"
+            android:gravity="right"
+            android:imeOptions="actionSearch"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColor="@color/white" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/searchbut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/searchet"
+            android:layout_alignTop="@+id/searchet"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/sbut"
+            android:text="@string/search"
+            android:textColor="#ffffff" />
+
+        <RadioGroup
+            android:id="@+id/searchtyperg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/searchet"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/postssearchtv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:gravity="center_vertical"
+                android:text="@string/searchposts"
+                android:textColor="@color/black" />
+
+            <RadioButton
+                android:id="@+id/postsearchrb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/radiobutton"
+                android:checked="true"
+                android:gravity="center_vertical"
+                android:padding="2dp" />
+
+            <TextView
+                android:id="@+id/userssearchtv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:gravity="center_vertical"
+                android:text="@string/searchusers"
+                android:textColor="@color/black" />
+
+            <RadioButton
+                android:id="@+id/userssearchrb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/radiobutton"
+                android:gravity="center_vertical"
+                android:padding="2dp" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/listsrl"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/toplay"
+        android:background="@color/feed_bg" >
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/feed_bg"
+            android:divider="@null" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

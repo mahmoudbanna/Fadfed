@@ -1,0 +1,77 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@id/attachmentButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true" />
+
+    <android.support.v4.widget.Space
+        android:id="@id/attachmentButtonSpace"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_toEndOf="@id/attachmentButton"
+        android:layout_toRightOf="@id/attachmentButton" />
+
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/attachmentButtonSpace"
+        android:layout_toLeftOf="@id/sendButtonSpace"
+        android:layout_toRightOf="@id/attachmentButtonSpace"
+        android:layout_toStartOf="@id/sendButtonSpace"
+        android:background="@drawable/postpopupbg">
+
+        <ImageButton
+            android:id="@+id/emjoyButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <android.support.v4.widget.Space
+            android:id="@id/emjoyButtonSpace"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/emjoyButton"
+            android:layout_toRightOf="@id/emjoyButton" />
+
+        <com.optimalsolutions.fadfed.emojicon.EmojiconEditText
+            android:id="@id/messageInput"
+            android:layout_toRightOf="@+id/emjoyButton"
+            android:gravity="right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            emojicon:emojiconSize="28sp"
+            android:inputType="textAutoCorrect|textAutoComplete|textMultiLine|textCapSentences"
+            tools:ignore="RtlHardcoded" />
+    </RelativeLayout>
+
+    <android.support.v4.widget.Space
+        android:id="@id/sendButtonSpace"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_toLeftOf="@id/messageSendButton"
+        android:layout_toStartOf="@id/messageSendButton" />
+
+    <ImageButton
+        android:id="@id/messageSendButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" />
+
+</merge>

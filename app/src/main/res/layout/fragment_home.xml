@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/postslay"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/newpostinput"
+        android:layout_marginBottom="5pt"
+        android:orientation="vertical">
+
+        <com.optimalsolutions.fadfed.animation.PagerSlidingTabStrip
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#7accc0"
+            android:textSize="@dimen/text_size_medium"
+            app:pstsDividerColor="#7accc0"
+            app:pstsIndicatorColor="#7accc0"
+            app:pstsShouldExpand="true"
+            app:pstsTabPaddingLeftRight="14dp"
+            app:pstsUnderlineColor="#7accc0" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tabs"
+            android:background="@android:color/white" />
+    </RelativeLayout>
+
+    <com.optimalsolutions.fadfed.messages.MessageInput
+        android:id="@+id/newpostinput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        app:attachmentButtonDefaultIconPressedColor="@color/green_dark"
+        app:emjoyButtonDefaultBgColor="@color/gray_light"
+        app:emjoyButtonDefaultBgPressedColor="@color/gray_light"
+        app:emjoyButtonDefaultIconDisabledColor="@color/gray_light"
+        app:inputButtonDefaultBgColor="@color/green"
+        app:inputButtonDefaultBgPressedColor="@color/green_dark"
+        app:inputCursorDrawable="@drawable/shape_custom_cursor"
+        app:inputHint="@string/add_post"
+        app:showAttachmentButton="false" />
+</RelativeLayout>

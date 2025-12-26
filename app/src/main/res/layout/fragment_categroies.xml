@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_category_item"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@null" />
+
+    <RelativeLayout
+        android:id="@+id/addnewpostrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/list"
+        android:background="@color/white"
+        android:clickable="true"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <Button
+            android:id="@+id/addnewpostbut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/addfeedbut" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/addnewpostbut"
+            android:layout_alignTop="@+id/addnewpostbut"
+            android:layout_toLeftOf="@+id/addnewpostbut"
+            android:background="@drawable/post_text"
+            android:clickable="true"
+            android:gravity="right|center_vertical"
+            android:paddingRight="10dp"
+            android:text="@string/add_post"
+            android:textColor="@color/add_new_feed_color" />
+    </RelativeLayout>
+
+</LinearLayout>

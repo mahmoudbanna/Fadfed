@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">فضفض</string>
+    <string name="facebook_app_id">1059867494038149</string>
+    <string name="error_text">حدث خطأ في عملية الإتصال بالخادم ,الرجاء المحاولة لاحقا</string>
+    <string name="success_message">تمت العملية بنجاح</string>
+    <string name="internet_error">حدث خطأ في عملية الإتصال بالإنترنت ,الرجاءالتأكد من هاتفك والمحاولة مرة أخرى</string>
+    <string name="image_error">حدث خطأ في عملية تحميل الصورة ,الرجاءالتأكد منها أوالمحاولة مرة أخرى</string>
+    <string name="parsing_error">حدث خطأ في عملية تحميل البيانات ,الرجاءالمحاولة مرة أخرى</string>
+    <string name="error_title">فضفض</string>
+    <string name="loading">تحميل</string>
+    <string name="ok">حسنا</string>
+    <string name="nodatafound">لا يوجد بيانات متوفرة</string>
+    <string name="operationunderprogress">العملية قيد التنفيذ</string>
+    <string name="loadingdata">جاري تحميل البيانات</string>
+    <string name="title_activity_login">Login</string>
+    <string name="login"> تسجيل الدخول</string>
+    <string name="newuser"><u>مستخدم جديد</u></string>
+    <string name="send">أرسل</string>
+    <string name="continues">استمرار</string>
+    <string name="search">بحث</string>
+    <string name="searchposts">بحث عن فضفضات</string>
+    <string name="searchusers">بحث عن مستخدمين</string>
+    <string name="nickname">الاسم المستعار</string>
+    <string name="password">كلمة المرور</string>
+    <string name="browseapp"><u>تصفح التطبيق</u></string>
+    <string name="username">اسم المستخدم</string>
+    <string name="email">البريد الإلكتروني</string>
+    <string name="passwordconfirmation">تأكيد كلمة المرور</string>
+    <string name="dateofbirth">تاريح الميلاد</string>
+    <string name="sex">الجنس</string>
+    <string name="country">الدولة</string>
+    <string name="show">إظهار</string>
+    <string name="hide">إخفاء</string>
+    <string name="save">حفظ</string>
+    <string name="you">أنت</string>
+    <string name="agreeon">أوافق على</string>
+    <string name="privecyplicy">إتفاقية استخدام تطبيق فضفض</string>
+    <string name="title_activity_registration">مستحدم جديد</string>
+    <string name="title_activity_home">الرئيسية</string>
+    <string name="menu_home_screen">الصفحة الرئيسية</string>
+    <string name="menu_personal_info">الملف الشخصي</string>
+    <string name="menu_edit_profile">تعديل حسابي</string>
+    <string name="menu_contact_us">تواصل معنا</string>
+    <string name="menu_about_app">عن التطبيق</string>
+    <string name="menu_log_out">تسجيل الخروج</string>
+
+    <string name="menu_share">شارك التطبيق</string>
+
+    <string name="nav_new_post">أحدث الفضفضات</string>
+    <string name="nav_most_active">الأكثر تفاعلا</string>
+    <string name="nav_follower_post">فضفضات المتابعين</string>
+    <string name="nav_categories">التصنيفات</string>
+    <string name="add_post">أضف فضفضتك</string>
+    <string name="add_comment">أضف تعليقك</string>
+    <string name="noofposts">عدد الفضفضات</string>
+    <string name="noofollowers">عدد المتابعين</string>
+    <string name="editprofilepic">تعديل الصورة الشخصية</string>
+    <string name="editnickname">تعديل الاسم المستعار</string>
+    <string name="cancel">إلغاء</string>
+    <string name="editemail">تعديل البريد الألكتروني </string>
+    <string name="editpassword">تعديل كلمة المرور </string>
+    <string name="enternewusername">أدخل إسم المستخدم</string>
+    <string name="enterneweemail">أدخل البريد الألكتروني</string>
+    <string name="enterpassword">أدخل رمز المرور</string>
+    <string name="sendmessage">محادثة</string>
+
+    <string name="addnewpost">أضاف فضفضة جديدة</string>
+    <string name="sendmessagetoyou">أرسل رسالةأليك</string>
+    <string name="commentonyourpost">علق على فضفضتك</string>
+    <string name="followyounow">يتتبعك الآن</string>
+    <string name="likeyourcomment">أعجب بتعلقيك</string>
+    <string name="likeyourpost">أعجب بفضفضتك</string>
+    <string name="unlikeyourcomment">غير معجب بتعلقيك</string>
+    <string name="unlikeyourpost">غير معجب بفضفضتك</string>
+
+    <string name="follow">متابعة</string>
+    <string name="block">حظر</string>
+    <string name="unfollow">إلغاء المتابعة</string>
+    <string name="unblock">إلغاء الحظر</string>
+    <string name="edit">تعديل</string>
+    <string name="editpost">تعديل الفضفضة</string>
+    <string name="editcomment">تعديل التعليق</string>
+    <string name="delete">حذف</string>
+    <string name="sendvio">إبلاغ عن إساءة</string>
+    <string name="publishpost">نشر</string>
+    <string name="optionalphoneno">رقم الهاتف (أختياري )</string>
+    <string name="messagecontent">نص الرسالة</string>
+    <string name="pleaselogin">الرجاء تسجبل الدخول لإتمام هذه العملية</string>
+    <string name="pleaseenterusername">الرجاء إدخال أسم المستخدم</string>
+    <string name="pleaseenternickname">الرجاء إدخال الاسم المستعار </string>
+    <string name="pleaseenterpassword">الرجاء إدخال كلمة المرور</string>
+    <string name="pleaseconfirmpassword">الرجاء تأكيد كلمة المرور</string>
+    <string name="pleaseenteremail">الرجاء إدخال البريد الإلكتروني</string>
+    <string name="pleaseenterpost">الرجاء إدخال فضفضتك في خانة النص</string>
+    <string name="pleaseselectcat">الرجاء تحديد التصنيف المناسب لفضفضتك</string>
+    <string name="pleaseconfirmcorrectpassword">الرجاء تأكيد كلمة المرور بشكل صحيح</string>
+    <string name="pleasentermessagecontent">الرجاء إدخال نص الرسالة</string>
+    <string name="gcm_registered">From GCM: device successfully registered!</string>
+    <string name="gcm_unregistered">From GCM: device successfully unregistered!</string>
+    <string name="gcm_message">From GCM: you got message!</string>
+    <string name="gcm_error">From GCM: error (%1$s).</string>
+    <string name="gcm_recoverable_error">From GCM: recoverable error (%1$s).</string>
+    <string name="gcm_deleted">From GCM: server deleted %1$d pending messages!</string>
+    <string name="add_pos_hint">الرجاء عدم نشر أي فضفضة أو تعليق تتضمن إساءة أو شتم أو قذف أو خروج عن الأخلاق العامة أو كل ما يثير نزعات عنصرية أو طائفية علما بأن الفضفضات و التعليقات  تعبر عن رأي أصحابها فقط كما يحق لإدارة التطبيق حذف أي محتوى غير لائق</string>
+    <string name="category_select_hint">الرجاء تحديد القسم من القائمة</string>
+    <string name="login_hint"> تكلم عما يجول بخاطرك و عما يقلقك و يؤرقك و اطرح ما تشاء من الفضفضات و شاركها مع مستخدمي فضفض و ناقش فضفضات مستخدمين آخرين</string>
+    <string name="desc_hint_titile"> عزيزي مستخدم فضفض : </string>
+    <string name="desc_hint">أن أكثر ما يهمناهو الحفاظ على خصوصيتك لتجد الراحة التامة في الفضفضة من خلال هذا التطبيق 	و عليه فإن جميع المعلومات المطلوبة (باستثناء اسم المستخدم و صورة الملف الشخصي) لن تكون ظاهرة لباقي المستخدمين و يتم تعبئتها لغايات التواصل مع فريق العمل و تسجيل الدخول وزياد فعالية التطبيق وبذلك يضمن لك فربق العمل الخصوصية التامة وسرية المعلومات التي قد تؤدي ال معرفة هويتك </string>
+    <string name="contactus">تواصل معنا</string>
+    <string name="contactusdesc1">يرجى مراسلتنا من خلال النموذج أدناه, وسوف نتواصل معكم في أقرب وقت ممكن </string>
+    <string name="contactusdesc2">المعلومات المطلوبة أدناه لن تظهر لأي من المشتركين وسيتم استخدامها فقط للتواصل مع فريق عمل فضفض </string>
+    <string name="male">ذكر</string>
+    <string name="female">أنثى</string>
+    <string name="optional">إختياري </string>
+    <string name="register">تسجيل </string>
+    <string name="notspecfied">غير محدد </string>
+    <string name="date_header_today">اليوم</string>
+    <string name="date_header_yesterday">البا</string>
+    <string name="hint_enter_a_message">أرسل رسالة</string>
+
+
+    <string-array name="nav_drawer_items">
+        <item>@string/menu_home_screen</item>
+        <item>@string/menu_personal_info</item>
+        <item>@string/menu_edit_profile</item>
+        <item>@string/menu_contact_us</item>
+        <item>@string/menu_about_app</item>
+        <item>@string/menu_share</item>
+        <item>@string/menu_log_out</item>
+    </string-array>
+    <string-array name="nav_drawer_items_browse_app">
+        <item>@string/menu_home_screen</item>
+        <item>@string/menu_contact_us</item>
+        <item>@string/menu_about_app</item>
+        <item>@string/menu_share</item>
+        <item>@string/login</item>
+    </string-array>
+
+    <array name="nav_drawer_icons">
+        <item>@drawable/home_icon</item>
+        <item>@drawable/user_menu_icon</item>
+        <item>@drawable/edit_icon</item>
+        <item>@drawable/connect_us_icon</item>
+        <item>@drawable/about_us_icon</item>
+        <item>@drawable/facebook_icon</item>
+        <item>@drawable/exit_icon</item>
+    </array>
+    <array name="nav_drawer_icons_browse_app">
+        <item>@drawable/home_icon</item>
+        <item>@drawable/connect_us_icon</item>
+        <item>@drawable/about_us_icon</item>
+        <item>@drawable/facebook_icon</item>
+        <item>@drawable/exit_icon</item>
+    </array>
+    <array name="sex_array">
+        <item>ذكر</item>
+        <item>أنثى</item>
+    </array>
+    <array name="arab_countries">
+        <item>الأردن‎</item>
+        <item>الكويت‎</item>
+        <item>لبنان‎</item>
+        <item>ليبيا‎</item>
+        <item>الجزائر‎</item>
+        <item>البحرين‎</item>
+        <item>جزر القمر</item>
+        <item>جيبوتي‎</item>
+        <item>مصر‎</item>
+        <item>العراق‎</item>
+        <item>موريتانيا‎</item>
+        <item>المغرب‎</item>
+        <item>عمان‎</item>
+        <item>فلسطين‎</item>
+        <item>قطر‎</item>
+        <item>المملكة العربية السعودية</item>
+        <item>الصومال‎</item>
+        <item>السودان‎</item>
+        <item>سوريا‎</item>
+        <item>تونس‎</item>
+        <item>الإمارات العربيّة المتّحدة</item>
+        <item>اليمن‎</item>
+    </array>
+    <array name="arab_countries_en_symbols">
+        <item>JOR</item>
+        <item>KWT</item>
+        <item>LBN</item>
+        <item>LBY</item>
+        <item>DZA</item>
+        <item>BHR</item>
+        <item>COM</item>
+        <item>DJI</item>
+        <item>EGY</item>
+        <item>IRQ</item>
+        <item>MRT</item>
+        <item>MAR</item>
+        <item>OMN</item>
+        <item>PSE</item>
+        <item>QAT</item>
+        <item>SAU</item>
+        <item>SOM</item>
+        <item>SDN</item>
+        <item>SYR</item>
+        <item>TUN</item>
+        <item>ARE</item>
+        <item>YEM</item>
+    </array>
+
+</resources>

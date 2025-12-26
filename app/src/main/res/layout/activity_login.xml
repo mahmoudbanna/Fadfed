@@ -1,0 +1,117 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f2f2f2">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:background="#f2f2f2"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/logorl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/feed_item_name">
+
+            <ImageView
+                android:id="@+id/logoiv"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/splsh" />
+
+            <TextView
+                android:layout_below="@+id/logoiv"
+                android:id="@+id/loginhinttv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:text="@string/login_hint"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_medium" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/logorl"
+            android:layout_marginTop="25dp"
+            android:background="#f2f2f2">
+
+            <EditText
+                android:id="@+id/usernameet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:drawableRight="@drawable/user_icon"
+                android:ems="10"
+                android:gravity="right"
+                android:hint="@string/username"
+                android:imeOptions="actionNext"
+                android:textColor="#afafaf"
+                android:textSize="@dimen/text_size_medium" />
+
+            <EditText
+                android:id="@+id/userpwet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/usernameet"
+                android:layout_alignRight="@+id/usernameet"
+                android:layout_below="@+id/usernameet"
+                android:layout_marginTop="10dp"
+                android:drawableRight="@drawable/password_icon"
+                android:ems="10"
+                android:gravity="right"
+                android:hint="@string/password"
+                android:imeOptions="actionGo"
+                android:inputType="textPassword"
+                android:textColor="#afafaf"
+                android:textSize="@dimen/text_size_medium" />
+
+            <Button
+                android:id="@+id/userloginbut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/userpwet"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/button"
+                android:gravity="center"
+                android:text="@string/login"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_large"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/newuserbut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/userloginbut"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="75dp"
+                android:layout_marginTop="15dp"
+                android:background="@null"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/newuser"
+                android:textColor="#59c1b2"
+                android:textSize="@dimen/text_size_large"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/feed_bg"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="@dimen/feed_item_margin"
+        android:layout_marginRight="@dimen/feed_item_margin"
+        android:layout_marginTop="@dimen/feed_item_margin"
+        android:background="@drawable/bg_parent_rounded_corner"
+        android:orientation="vertical"	
+        android:paddingBottom="@dimen/feed_item_padding_top_bottom"
+        android:paddingTop="@dimen/feed_item_padding_top_bottom" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/feed_item_padding_left_right"
+            android:paddingRight="@dimen/feed_item_padding_left_right" >
+
+            <com.optimalsolutions.fadfed.utils.CircularNetworkImageView
+                android:id="@+id/profilePic"
+                android:layout_width="@dimen/feed_item_profile_pic"
+                android:layout_height="@dimen/feed_item_profile_pic"
+                android:layout_alignParentRight="true"
+                android:clickable="true"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/user_image_undefind" />
+
+            <TextView
+                android:id="@+id/nametv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/profilePic"
+                android:gravity="right"
+                android:textColor="@color/feed_item_name"
+                android:textSize="@dimen/text_size_medium"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/timestamptv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nametv"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toLeftOf="@+id/profilePic"
+                android:gravity="right"
+                android:textColor="@color/timestamp"
+                android:textSize="@dimen/text_size_small" />
+
+            <com.optimalsolutions.fadfed.emojicon.EmojiconTextView
+                android:id="@+id/txtStatusMsgtv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/timestamptv"
+                android:layout_toLeftOf="@+id/profilePic"
+                android:layout_toRightOf="@+id/viewfeedbut"
+                android:gravity="right"
+                android:paddingLeft="@dimen/feed_item_status_pad_left_right"
+                android:paddingRight="@dimen/feed_item_status_pad_left_right"
+                android:paddingTop="@dimen/feed_item_status_pad_top"
+                android:clickable="true"
+                android:textColor="@drawable/feed_item_text"
+                emojicon:emojiconSize="28sp"  />
+
+            <ImageView
+                android:id="@+id/feedcommentbut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/nametv"
+                android:layout_below="@+id/txtStatusMsgtv"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/comments_icon"
+                android:focusable="false"
+                android:focusableInTouchMode="false" />
+
+            <TextView
+                android:id="@+id/feedcommentcount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/feedcommentbut"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/feedcommentbut"
+                android:textColor="@color/feed_number_color"
+                android:textSize="@dimen/feed_item_numbers" />
+
+            <ImageButton
+                android:id="@+id/feedlikebut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/feedcommentcount"
+                android:layout_marginRight="25dp"
+                android:layout_toLeftOf="@+id/feedcommentcount"
+                android:background="@drawable/like_unpushed"
+                android:focusable="false"
+                android:focusableInTouchMode="false" />
+
+            <TextView
+                android:id="@+id/feedlikecount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/feedlikebut"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/feedlikebut"
+                android:textColor="@color/feed_number_color"
+                android:textSize="@dimen/feed_item_numbers" />
+
+            <ImageButton
+                android:id="@+id/feeddislikebut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/feedlikecount"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="2dp"
+                android:layout_toLeftOf="@+id/feedlikecount"
+                android:background="@drawable/unlike_unpushed"
+                android:focusable="false"
+                android:focusableInTouchMode="false" />
+
+            <TextView
+                android:id="@+id/feeddislikecount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/feedlikecount"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/feeddislikebut"
+                android:textColor="@color/feed_number_color"
+                android:textSize="@dimen/feed_item_numbers" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

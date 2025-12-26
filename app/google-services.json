@@ -1,0 +1,38 @@
+{
+  "project_info": {
+    "project_number": "451113990366",
+    "project_id": "fadfed123"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:451113990366:android:7851bfbda52f3de0",
+        "android_client_info": {
+          "package_name": "com.optimalsolutions.fadfed"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6iRhySYUYfamTtvA-V2YefZCgvGHi3sU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-61801899-1"
+          }
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

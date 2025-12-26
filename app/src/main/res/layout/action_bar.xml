@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:enabled="false"
+    android:orientation="horizontal">
+
+    <ImageButton
+        android:id="@+id/menubut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+       android:background="@null"
+        android:padding="10dp"
+        android:src="@drawable/menubutton" />
+
+    <ImageButton
+        android:id="@+id/backbut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@null"
+        android:padding="10dp"
+        android:src="@drawable/back" />
+
+    <ImageButton
+        android:id="@+id/searchbut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/backbut"
+        android:background="@null"
+        android:padding="10dp"
+        android:src="@drawable/searchbut" />
+
+    <ImageButton
+        android:id="@+id/notificationbut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/searchbut"
+        android:background="@null"
+        android:padding="10dp"
+        android:src="@drawable/notificationbut" />
+
+    <TextView
+        android:id="@+id/notificationcounttv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/notificationbut"
+        android:layout_alignLeft="@+id/notificationbut"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/notificationbut"
+        android:layout_alignStart="@+id/notificationbut"
+        android:layout_marginTop="10dp"
+        android:background="@null"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:textColor="@color/holo_red"
+        android:textSize="@dimen/text_size_small" />
+
+    <ImageButton
+        android:id="@+id/messagesbut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/notificationbut"
+        android:layout_toStartOf="@+id/notificationbut"
+        android:background="@null"
+        android:padding="10dp"
+        android:src="@drawable/chat" />
+
+    <TextView
+        android:id="@+id/messagescounttv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/messagesbut"
+        android:layout_alignLeft="@+id/messagesbut"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/messagesbut"
+        android:layout_alignStart="@+id/messagesbut"
+        android:layout_marginTop="10dp"
+        android:background="@null"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:textColor="@color/holo_red"
+        android:textSize="@dimen/text_size_small" />
+</RelativeLayout>

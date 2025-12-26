@@ -1,0 +1,122 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/contactustv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/contactus"
+        android:textColor="@color/cat_item_name"
+        android:textSize="@dimen/text_size_large" />
+
+    <TextView
+        android:id="@+id/desctv1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contactustv"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/contactusdesc1"
+        android:textColor="#afafaf"
+        android:textSize="@dimen/text_size_small" />
+
+    <TextView
+        android:id="@+id/desctv2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/desctv1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/contactusdesc2"
+        android:textColor="#afafaf"
+        android:textSize="@dimen/text_size_small" />
+
+    <EditText
+        android:id="@+id/usernameet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/desctv2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="25dp"
+        android:gravity="right"
+        android:hint="@string/username"
+        android:textColor="#afafaf"
+        android:textSize="@dimen/text_size_small" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/emailet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/usernameet"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="10dp"
+        android:gravity="right"
+        android:hint="@string/email"
+        android:textColor="#afafaf"
+        android:textSize="@dimen/text_size_small" />
+
+    <EditText
+        android:id="@+id/phoneet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/emailet"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="10dp"
+        android:gravity="right"
+        android:hint="@string/optionalphoneno"
+        android:textColor="#afafaf"
+        android:textSize="@dimen/text_size_small" />
+
+    <EditText
+        android:id="@+id/messagecontentet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/phoneet"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="10dp"
+        android:gravity="right"
+        android:hint="@string/messagecontent"
+        android:lines="5"
+        android:textColor="#afafaf"
+        android:textSize="@dimen/text_size_small" />
+
+    <Button
+        android:id="@+id/publishmessagebut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/messagecontentet"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/button"
+        android:text="@string/send"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

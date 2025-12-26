@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/commentlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editcommentinput"
+        android:background="@color/white"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/text_size_xlarge"
+            android:textColor="@color/feed_item_name"
+            android:text="@string/editcomment" />
+
+    </RelativeLayout>
+
+    <com.optimalsolutions.fadfed.messages.MessageInput
+        android:id="@+id/editcommentinput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        app:attachmentButtonDefaultIconPressedColor="@color/green_dark"
+        app:emjoyButtonDefaultBgColor="@color/gray_light"
+        app:emjoyButtonDefaultBgPressedColor="@color/gray_light"
+        app:emjoyButtonDefaultIconDisabledColor="@color/gray_light"
+        app:inputButtonDefaultBgColor="@color/green"
+        app:inputButtonDefaultBgPressedColor="@color/green_dark"
+        app:inputCursorDrawable="@drawable/shape_custom_cursor"
+        app:inputHint="@string/edit"
+        app:showAttachmentButton="false" />
+
+
+</RelativeLayout>

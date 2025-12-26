@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_category_item"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/nametv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:paddingLeft="@dimen/cat_item_status_pad_left_right"
+        android:paddingRight="@dimen/cat_item_status_pad_left_right"
+        android:paddingTop="@dimen/cat_item_status_pad_top"
+        android:layout_gravity="right"
+        
+        android:paddingBottom="@dimen/cat_item_status_pad_top"
+        android:textColor="@color/cat_item_name"
+        android:textSize="@dimen/text_size_medium"
+        android:textStyle="bold" />
+
+</LinearLayout>
